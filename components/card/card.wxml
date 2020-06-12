@@ -1,0 +1,38 @@
+<view class="card-wrap">
+  <image class="card-wrap-bg" src="/assets/images/createBusinessCards/card_bg.png" />
+  <view class="top">
+    <view class="t-left">
+      <text class="name">{{name || '姓名'}}</text>
+      <text class="position">{{position || '职务'}}</text>
+    </view>
+    <view class="t-right">
+      <!-- <image class="logo" src="/assets/images/createBusinessCards/logo.png" /> -->
+      <text class="corporate-name">{{companyno || '公司简称'}}</text>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="b-left">
+      <view class="item mb">
+        <view class="icon">
+          <image class="icon-1" src="/assets/images/icon/icon_1.png" />
+        </view>
+        <text class="txt">{{phone || '手机号'}}</text>
+      </view>
+      <view class="item mb">
+        <view class="icon">
+          <image class="icon-2" src="/assets/images/icon/icon_2.png" />
+        </view>
+        <text class="txt">{{wxno || '微信'}}</text>
+      </view>
+      <view class="item">
+        <view class="icon">
+          <image class="icon-3" src="/assets/images/icon/icon_3.png" />
+        </view>
+        <text class="txt">{{addr || '地址'}}</text>
+      </view>
+    </view>
+    <!-- <view class="b-right">
+      <image class="qr-code" src="/assets/images/createBusinessCards/code.png" />
+    </view> -->
+  </view>
+</view>

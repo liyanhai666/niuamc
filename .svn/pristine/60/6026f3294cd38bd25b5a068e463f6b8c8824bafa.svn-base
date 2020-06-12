@@ -1,0 +1,141 @@
+@import "/app.wxss";
+
+.registered {
+  height: 100%;
+}
+
+.registered .checkboxGroup {
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+}
+
+.registered .checkboxGroup .checkbox {
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+  padding: 0 30rpx;
+  width: 50%;
+  font-size: 30rpx;
+  color: #000;
+}
+
+.registered .header {
+  margin-top: 40rpx;
+  padding: 40rpx 0 10rpx;
+  background-color: #fff;
+}
+
+.registered .header .title {
+  padding: 0 30rpx;
+  font-size: 36rpx;
+  color: #000;
+}
+
+/* 匹配区域样式 */
+.registered .body {}
+
+.registered .body .title {
+  display: block;
+  padding: 40rpx 0 20rpx;
+  font-size: 36rpx;
+  color: #000;
+}
+
+.registered .body .list-label {
+  display: block;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: #333;
+}
+
+.registered .body .card-wrap {
+  margin-bottom: 18rpx;
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+}
+
+.registered .body .card-wrap image {
+  width: 331rpx;
+  height: 183rpx;
+}
+
+.registered .body .card-wrap .info {
+  margin-left: 30rpx;
+}
+
+.registered .body .card-wrap .info .name,
+.registered .body .card-wrap .info .company,
+.registered .body .card-wrap .info .position {
+  display: block;
+}
+
+.registered .body .card-wrap .info .name {
+  font-size: 36rpx;
+  color: #000;
+}
+
+.registered .body .card-wrap .info .company,
+.registered .body .card-wrap .info .position {
+  margin-top: 22rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.registered .body .label {
+  margin-top: 30rpx;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.registered .body .label .label-item {
+  margin-left: 10rpx;
+  padding: 3rpx 10rpx;
+  font-size: 20rpx;
+  color: #d73037;
+  border: 1px #d73037 solid;
+  border-radius: 5rpx;
+}
+
+.registered .body .label-right {
+  color: #999;
+}
+
+/* 右侧导航 */
+.float-nav {
+  position: fixed;
+  top: 32rpx;
+  right: 10rpx;
+  padding: 24rpx 0;
+  width: 40rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20rpx;
+}
+
+.float-nav text {
+  display: block;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  color: #fff;
+}
+
+/* 新增头部介绍 */
+.logo-wrap {}
+
+.logo-wrap .logo {
+  display: block;
+  margin: 0 auto;
+  width: 253rpx;
+  height: 37rpx;
+}
+
+.logo-wrap .text {
+  display: block;
+  margin-top: 28rpx;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #666;
+  text-align: justify;
+}

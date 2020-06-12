@@ -1,0 +1,31 @@
+page {
+  background-color: #000;
+}
+
+.container {
+  padding: 0;
+}
+
+.container image {
+  display: block;
+  width: 100%;
+  height: 1768rpx;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 120rpx;
+  padding: 0 12rpx 0 34rpx;
+  height: 75rpx;
+  background-color: #f7f7f7;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  font-weight: 600;
+  color: #000;
+  border-radius: 38rpx 0 0 38rpx;
+  text-align: center;
+}

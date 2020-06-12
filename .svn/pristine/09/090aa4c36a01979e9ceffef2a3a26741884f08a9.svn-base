@@ -1,0 +1,90 @@
+@import "/app.wxss";
+
+page {
+  overflow: hidden;
+}
+
+.unregistered {
+  padding: 30rpx 30rpx 0;
+}
+
+.unregistered .body {
+  width: 100%;
+  text-align: center;
+}
+
+.unregistered .body .icon {
+  margin: 0 auto;
+  width: 130rpx;
+  height: 100rpx;
+}
+
+.unregistered .body .h1 {
+  display: block;
+  margin-top: 38rpx;
+  font-size: 44rpx;
+  line-height: 1;
+  color: #343434;
+}
+
+.unregistered .body .p {
+  display: block;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  line-height: 1;
+  color: #666;
+}
+
+.unregistered .body .btn {
+  position: absolute;
+  bottom: 50rpx;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 560rpx;
+  height: 80rpx;
+  font-size: 34rpx;
+  line-height: 80rpx;
+  color: #fff;
+  border-radius: 40rpx;
+  background: linear-gradient(to right, #d73037, #ff5a45);
+  box-shadow: 0 10rpx 20rpx 0 rgba(215, 48, 55, 0.2);
+}
+
+/* 新增文案 */
+.text-list {}
+
+.text-list .mt {
+  margin-top: 30rpx;
+}
+
+.text-list .logo_1,
+.text-list .logo_2 {
+  display: block;
+  margin: 0 auto;
+}
+
+.text-list .logo_1 {
+  width: 500rpx;
+  height: 56rpx;
+}
+
+.text-list .logo_2 {
+  width: 563rpx;
+  height: 50rpx;
+}
+
+.text-list .item {
+  padding: 32rpx 0 40rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  box-shadow: 3rpx 0 15rpx 0 rgba(0, 0, 0, 0.1);
+}
+
+.text-list .item .text {
+  margin-top: 30rpx;
+  padding: 0 20rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #666;
+  text-align: justify;
+}

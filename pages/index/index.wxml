@@ -1,0 +1,9 @@
+<!-- 页面内容 
+<block wx:if="{{isRegist}}">
+  <registered></registered>
+</block>
+<block wx:else>
+  <unregistered></unregistered>
+</block> -->
+<navbar navbarData="{{navbarData}}"></navbar>
+<registered></registered>

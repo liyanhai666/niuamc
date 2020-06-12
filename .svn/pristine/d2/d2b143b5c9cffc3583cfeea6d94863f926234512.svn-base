@@ -1,0 +1,29 @@
+<!-- 自定义头部 -->
+<view class='nav-wrap' style='padding-top:{{navHeight-46}}px;height: {{navHeight}}px;'>
+  <!-- <view style="margin-top:{{navHeight-46}}px;">
+    <view class='nav-title'>{{navbarData.title}}</view>
+    <view style='display: flex; justify-content: space-around;flex-direction: column'>
+      <view class='nav-capsule' style='height: {{navHeight}}px;'>
+        <view bindtap='_backhome' wx:if='{{share}}'>
+          <text class="iconfont iconshouye"></text>
+        </view>
+        <view bindtap='_navback' wx:else>
+          <text class="iconfont iconfanhui"></text>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view class="nav-content">
+    <view class="nav-icon" wx:if="{{navbarData.showCapsule}}">
+      <view class="icon-item" bindtap='_navback' wx:if="{{navbarData.isBack}}">
+        <text class="iconfont iconfanhui"></text>
+      </view>
+      <view class="icon-item" bindtap='_backhome' wx:else>
+        <text class="iconfont iconshouye"></text>
+      </view>
+    </view>
+    <view class="nav-title">{{navbarData.title}}</view>
+  </view>
+</view>
+<!-- 占位块 -->
+<view style='height: {{navHeight}}px;'></view>

@@ -1,0 +1,22 @@
+<navbar navbarData="{{navbarData}}"></navbar>
+<block wx:if="{{isRegist}}">
+  <view class="container">
+    <card wxno="{{wxno}}" name="{{name}}" phone="{{phone}}" position="{{position}}" addr="{{addr}}" companyno="{{companyno}}"></card>
+    <view class="btn-group">
+      <view class=" d-flex-r">
+        <view class="btn" bindtap="toEdit">
+          <text>修改</text>
+        </view>
+        <button class="btn type-1" open-type="share">
+          <text>递名片</text>
+        </button>
+      </view>
+      <footerText></footerText>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view style="height:100%">
+    <unregistered></unregistered>
+  </view>
+</block>

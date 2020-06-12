@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/load/load",
+    "pages/index/index",
+    "pages/share/share",
+    "pages/createSuccess/createSuccess",
+    "pages/cardEdit/cardEdit",
+    "pages/createBusinessCards/createBusinessCards",
+    "pages/myCard/myCard",
+    "pages/cardDetails/cardDetails"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "资产牛人圈",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#ff5a45",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "牛人圈",
+        "iconPath": "assets/images/icon/tab_icon_3.png",
+        "selectedIconPath": "assets/images/icon/tab_selected_icon_3.png"
+      },
+      {
+        "pagePath": "pages/myCard/myCard",
+        "text": "我的",
+        "iconPath": "assets/images/icon/tab_icon_4.png",
+        "selectedIconPath": "assets/images/icon/tab_selected_icon_4.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

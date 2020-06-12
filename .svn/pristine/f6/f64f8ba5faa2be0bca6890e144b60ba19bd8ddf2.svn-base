@@ -1,0 +1,66 @@
+/* 导入fonts */
+@import './assets/fonts/iconfont.wxss';
+
+/**app.wxss**/
+page {
+  background-color: #f2f2f2;
+}
+
+/* 圆角 */
+.b-radius {
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+/* 圆角 end */
+
+/* 弹性布局 */
+.d-flex-r {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.d-flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 弹性布局 end */
+
+/* 修改checkbox样式 */
+
+checkbox .wx-checkbox-input {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50% !important;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #d73037;
+  border-radius: 50% !important;
+  border-color: #d73037;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50% !important;
+  line-height: 34rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #ffffff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/* 修改checkbox样式 end */
+
+/* 全局样式 */
+.container {
+  padding: 30rpx;
+  line-height: 1;
+}
+
+/* 全局样式 end */

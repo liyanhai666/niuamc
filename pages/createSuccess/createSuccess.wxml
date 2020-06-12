@@ -1,0 +1,25 @@
+<navbar navbarData="{{navbarData}}"></navbar>
+<view class="container">
+  <!-- <view class="header">
+    <view>
+      <image class="icon" src="/assets/images/createSuccess/logo.png" />
+    </view>
+    <text class="h1">恭喜你!</text>
+    <text class="txt">拥有了电子名片</text>
+  </view> -->
+  <card wxno="{{wxno}}" name="{{name}}" phone="{{phone}}" position="{{position}}" addr="{{addr}}" companyno="{{companyno}}"></card>
+  <view class="btn-group d-flex-r">
+    <view class="btn" bindtap="toIndex">
+      <text>前往首页</text>
+    </view>
+    <button class="btn type-1" open-type="share">
+      <text>递名片</text>
+    </button>
+  </view>
+  <view class="mask" wx:if="{{isMask}}" bindtap="maskHide">
+    <view class="text">
+      <text>赶快分享给朋友，让他们来和你一起加入不良资产牛人圈吧！</text>
+      <image class="arrow" src="/assets/images/createSuccess/icon_4.png" />
+    </view>
+  </view>
+</view>

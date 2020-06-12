@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "card": "/components/card/card",
+    "navbar": "/components/navbar/navbar",
+    "footerText": "/components/footerText/footerText"
+  },
+  "navigationBarTitleText": "名片详情"
+}

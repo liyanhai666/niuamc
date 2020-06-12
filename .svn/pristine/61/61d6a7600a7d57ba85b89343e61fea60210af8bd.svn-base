@@ -1,0 +1,141 @@
+/* 联系方式 */
+.contact-information {
+  margin-top: 30rpx;
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.contact-information .title {
+  font-size: 36rpx;
+  color: #333;
+}
+
+.contact-information .icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40rpx;
+}
+
+.contact-information .icon-item {
+  position: relative;
+  width: 74rpx;
+  height: 74rpx;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 74rpx;
+}
+
+.contact-information .icon-item .arrow {
+  display: none;
+  position: absolute;
+  bottom: -30rpx;
+  left: 50%;
+  margin-left: -10rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #fdf4f5;
+  transform: rotate(45deg);
+}
+
+.contact-information .icon-item.active {
+  background-color: #fdf4f5;
+}
+
+.contact-information .icon-item.active .arrow {
+  display: block;
+}
+
+.contact-information .icon-list .icon-item .iconfont {
+  font-size: 20px;
+}
+
+.contact-information .icon-item image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.contact-information .content-list {
+  margin-top: 16rpx;
+}
+
+.contact-information .content-list .content-item {
+  display: none;
+  padding: 0 30rpx 0 25rpx;
+  min-height: 108rpx;
+  background-color: #fdf4f5;
+  border-radius: 6rpx;
+}
+
+.contact-information .content-list .content-item.active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-information .content-list .content-item .txt {
+  max-width: 80%;
+  font-size: 30rpx;
+  color: #333;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.contact-information .content-list .content-item .btn {
+  margin-left: 12rpx;
+  font-size: 24rpx;
+  color: #ff5a45;
+  text-decoration: underline;
+}
+
+/* logo */
+.logo {}
+
+.logo image {
+  display: block;
+  margin: 30rpx auto 0;
+  width: 253rpx;
+  height: 37rpx;
+}
+
+/* 禁止点击 */
+.disabled {
+  opacity: 0.3;
+}
+
+.footer {
+  margin-top: 136rpx;
+}
+
+.type-1 {
+  margin: 0 auto;
+  width: 560rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #d73037, #ff5a45);
+  box-shadow: 0 10rpx 20rpx 0 rgba(215, 48, 55, 0.2);
+  border-radius: 50rpx;
+}
+
+.btn1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 120rpx;
+  padding: 0 12rpx 0 34rpx;
+  height: 75rpx;
+  background-color: #f7f7f7;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  font-weight: 600;
+  color: #000;
+  border-radius: 38rpx 0 0 38rpx;
+  text-align: center;
+}

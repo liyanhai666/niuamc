@@ -1,0 +1,170 @@
+/* 我的名片 */
+.header {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: -8rpx;
+  padding: 40rpx 30rpx 0;
+  width: 706rpx;
+  height: 350rpx;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header .top .name,
+.header .top .company,
+.header .top .position {
+  display: block;
+}
+
+.header .top .name {
+  margin-bottom: 22rpx;
+  font-size: 36rpx;
+  line-height: 1;
+  color: #000;
+}
+
+.header .top .company {
+  margin-bottom: 20rpx;
+}
+
+.header .top .company,
+.header .top .position {
+  font-size: 24rpx;
+  line-height: 1;
+  color: #666;
+}
+
+.header .bottom {
+  margin-top: 40rpx;
+}
+
+.header .bottom .item {
+  margin-bottom: 10rpx;
+  height: 24rpx;
+}
+
+.header .bottom .name,
+.header .bottom .company,
+.header .bottom .position {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 2rpx;
+  min-width: 134rpx;
+  height: 100%;
+  /* background-color: #e0e0e0; */
+  font-size: 24rpx;
+  line-height: 1;
+}
+
+.header .bottom .company {
+  min-width: 196rpx;
+}
+
+.header .bottom .position {
+  min-width: 246rpx;
+}
+
+/* form 表单 */
+.form {
+  margin-top: 30rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+}
+
+.form .item {
+  justify-content: space-between;
+  padding: 20rpx 0 22rpx;
+  border-bottom: 1px #f2f2f2 solid;
+}
+
+.form .item .label {
+  width: 100rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.form .item .input {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.form .item .right .txt {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.form .item .right .add {
+  display: block;
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.form .item .right .btn {
+  position: relative;
+  font-size: 24rpx;
+  color: #d73037;
+}
+
+/* 修改checkbox样式 */
+checkbox .wx-checkbox-input {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50% !important;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #d73037;
+  border-radius: 50% !important;
+  border-color: #d73037;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50% !important;
+  line-height: 34rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #ffffff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.checkboxGroup {
+  flex-wrap: wrap;
+  margin-top: 40rpx;
+  margin-bottom: 18rpx;
+}
+
+.checkboxGroup .checkbox {
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+  padding: 0 30rpx;
+  width: 50%;
+  font-size: 30rpx;
+  color: #000;
+}
+
+/* 修改checkbox样式 end */
+/* 提交按钮 */
+.submit {
+  margin: 0 auto;
+  width: 560rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #d73037, #ff5a45);
+}

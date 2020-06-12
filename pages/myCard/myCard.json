@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "unregistered": "/components/unregistered/unregistered",
+    "card": "/components/card/card",
+    "footerText": "/components/footerText/footerText",
+    "navbar": "/components/navbar/navbar"
+  }
+}

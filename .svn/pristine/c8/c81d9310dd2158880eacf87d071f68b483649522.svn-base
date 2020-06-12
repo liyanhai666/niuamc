@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "registered": "/components/registered/registered",
+    "unregistered": "/components/unregistered/unregistered",
+    "navbar": "/components/navbar/navbar"
+  }
+}

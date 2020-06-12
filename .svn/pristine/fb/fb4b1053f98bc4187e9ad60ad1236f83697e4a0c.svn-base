@@ -1,0 +1,11 @@
+<view class="container df-col">
+  <view>
+    <view class="logo">
+      <image class="logo" src="/assets/images/logo.png" />
+    </view>
+    <text class="name">授权</text>
+    <view class="btns df-row">
+      <button class="auth btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="margin:auto auto;">授权</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<navbar navbarData="{{navbarData}}"></navbar>
+<view class="container">
+  <image src="/assets/images/share/share.png" />
+  <!-- <view class="btn" bindtap="index">
+    <text>点击返回</text>
+    <text>我的名片</text>
+  </view> -->
+</view>

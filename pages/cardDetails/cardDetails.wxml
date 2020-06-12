@@ -1,0 +1,44 @@
+<navbar navbarData="{{navbarData}}"></navbar>
+<view class="container">
+  <card wxno="{{wxno}}" name="{{name}}" phone="{{phone}}" position="{{position}}" addr="{{addr}}" companyno="{{companyno}}"></card>
+  <!-- 快速联系 -->
+  <view class="contact-information">
+    <text class="title">快速联系</text>
+    <view class="icon-list">
+      <block wx:for="{{tabs}}" wx:key="index">
+        <view class="icon-item {{index === cur ? 'active' :''}}{{item.txt.length > 0 ? '' : 'disabled'}}" data-index="{{index}}" bindtap="tabChange">
+          <text class="iconfont {{item.icon}}"></text>
+          <text class="arrow" style="display:{{play}}"></text>
+        </view>
+      </block>
+    </view>
+    <view class="content-list" style="display:{{play}}">
+      <block wx:for="{{tabs}}" wx:key="index">
+        <view class="content-item {{index === cur ? 'active' :''}}">
+          <text class="txt">{{item.txt}}</text>
+          <view wx:if="{{item.type === '1'}}">
+            <text class="btn" bindtap="call">呼叫</text>
+            <text class="btn" bindtap="copy">复制</text>
+          </view>
+          <view wx:elif="{{item.type === '2'}}">
+            <text class="btn" bindtap="copy">复制</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="type-1" style="margin-top:30rpx;display:{{btn2}};position:relative;" bindtap="toRegist">
+      <text>立刻创建我的名片</text>
+      <button class="auth btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="position:absolute;top:0;left:0;width: 100%;height: 100%;opacity:0;"></button>
+    </view>
+    <button class="type-1" open-type="share" style="margin-top:30rpx;display:{{btn3}};">
+      <text>转发这张名片给Ta</text>
+    </button>
+    <footerText></footerText>
+  </view>
+  <view class="btn1" bindtap="index" style="display:{{share}}">
+    <text>点击返回</text>
+    <text>我的名片</text>
+  </view>
+</view>

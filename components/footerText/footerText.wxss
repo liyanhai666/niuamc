@@ -1,0 +1,29 @@
+.footer-text {
+  text-align: center;
+}
+
+.logo {
+  font-size: 36rpx;
+  line-height: 1;
+  color: #333;
+  margin-top:50rpx;
+}
+
+.logo .logo-1 {
+  width: 103rpx;
+  height: 33rpx;
+}
+
+.logo .logo-2 {
+  width: 102rpx;
+  height: 33rpx;
+}
+
+.name {
+  display: block;
+  margin-top: 20rpx;
+  margin-bottom: 70rpx;
+  font-size: 24rpx;
+  line-height: 1;
+  color: #999;
+}

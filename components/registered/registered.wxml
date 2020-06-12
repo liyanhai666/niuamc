@@ -1,0 +1,85 @@
+<!-- 内容部分 -->
+<scroll-view scroll-y style="height:100%;" scroll-into-view="{{toView}}" scroll-with-animation="true" bindscroll="scroll">
+  <view class="container registered">
+    <view class="logo-wrap">
+      <image class="logo" src="/assets/images/cardDetails/logo.png" />
+      <view class="text">
+        牛人圈，是“牛资管”开发的社交小程序。这里都是不良资产行业的“牛人”。在牛人圈中，您可以创建名片，并标出您的需求，我们为您自动匹配有对应需求的朋友。比如，您指明正在“找资金”，那么牛人圈为您自动筛选正在“找资产”的朋友。
+      </view>
+    </view>
+    <view class="header b-radius">
+      <view>
+        <text class="title">我需要（可多选）</text>
+      </view>
+      <!-- checkbox 
+      <checkbox-group class="checkboxGroup d-flex-r" bindchange="checkboxChange">
+        <label class="checkbox d-flex-r" wx:for="{{checkboxList}}" wx:key="{{index}}">
+          {{item.name}}
+          <checkbox value="{{item.value}}" checked="{{item.checked}}" />
+        </label>
+      </checkbox-group>-->
+
+ <radio-group class="checkboxGroup d-flex-r" bindchange="radioChange1">
+      <label class="checkbox d-flex-r" wx:for="{{radioList1}}" wx:key="{{index}}">
+        {{item.value}}
+        <checkbox value="{{item.id}}" checked="{{item.checked}}" />
+      </label>
+    </radio-group>
+    <radio-group class="checkboxGroup d-flex-r" bindchange="radioChange2">
+      <label class="checkbox d-flex-r" wx:for="{{radioList2}}" wx:key="{{index}}">
+        {{item.value}}
+        <checkbox value="{{item.id}}" checked="{{item.checked}}" />
+      </label>
+    </radio-group>
+    </view>
+    <view class="body" style="padding-bottom:{{navHeight}}px;">
+      <text class="title">下面是与您匹配的朋友：</text>
+      <block wx:for="{{groups}}" wx:key="{{index}}">
+        <view class="card-list" id="{{item.groupName === '#' ? 'other' : item.groupName}}">
+          <text class="list-label">{{item.groupName}}</text>
+          <block wx:for="{{item.fansCards}}" wx:key="{{index}}">
+            <view class="card-wrap b-radius" bindtap="handleClick" data-id='{{item.wxopenid}}'>
+              <view class="d-flex-r">
+								<view class="img-wrap">
+									<image src="/assets/images/cardList/card.png" mode="widthFix" />
+									<text class="name">{{item.name}}</text>
+									<text class="job">{{item.title}}</text>
+									<text class="phone">{{item.phone}}</text>
+									<text class="wxno">{{item.wxno || "微信"}}</text>
+									<text class="addr">{{"地址"}}</text>
+								</view>
+								<view class="info">
+									<view>
+										<text class="name">{{item.name}}</text>
+										<text class="company">{{item.company}}</text>
+									</view>
+									<text class="position">{{item.title}}</text>
+								</view>
+							</view>
+							<view class="label d-flex-r">
+								<view class="label-left">
+									<block wx:if="{{item.isfund == '1' || item.isassets == '1' || item.isrecruit == '1' || item.isjob == '1'}}">
+										正在:
+									</block>
+									<text class="label-item" wx:if="{{item.isfund == '1'}}">找资金</text>
+									<text class="label-item" wx:if="{{item.isassets == '1'}}">找资产</text>
+									<text class="label-item" wx:if="{{item.isrecruit == '1'}}">招人</text>
+									<text class="label-item" wx:if="{{item.isjob == '1'}}">找工作</text>
+								</view>
+								<text class="label-right"></text>
+							</view>
+						</view>
+					</block>
+				</view>
+			</block>
+		</view>
+	</view>
+</scroll-view>
+<!-- 右侧导航 -->
+<view class="float-nav" style="top:{{navHeight+32}}px;">
+  <block wx:for="{{letters}}" wx:key="{{index}}">
+    <view class="{{index === currentIndex ? 'active':''}}" bindtap='clickScroll' data-id="{{item === '#' ? 'other' : item}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
